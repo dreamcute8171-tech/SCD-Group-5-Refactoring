@@ -23,3 +23,8 @@ def test_number_categories():
     assert game.fours() == 8
     assert game.fives() == 5
     assert game.sixes() == 6
+
+def test_two_pair():
+    assert Yatzy.two_pair(2, 2, 3, 3, 5) == 10
+    assert Yatzy.two_pair(1, 1, 4, 4, 6) == 10
+    assert Yatzy.two_pair(2, 2, 2, 3, 4) == 0
