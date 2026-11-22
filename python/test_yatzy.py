@@ -35,3 +35,9 @@ def test_three_and_four_of_a_kind():
 
     assert Yatzy.four_of_a_kind(2, 2, 2, 2, 5) == 8
     assert Yatzy.four_of_a_kind(3, 3, 3, 4, 5) == 0
+
+
+def test_full_house():
+    assert Yatzy.fullHouse(2, 2, 3, 3, 3) == 13
+    assert Yatzy.fullHouse(4, 4, 4, 5, 5) == 22
+    assert Yatzy.fullHouse(2, 2, 3, 4, 5) == 0
